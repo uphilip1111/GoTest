@@ -4,8 +4,8 @@ import (
 	"testing"
 )
 
-func BenchmarkQueryFunc(b *testing.B) {
+func BenchmarkQueryBySQL(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		QueryFunc()
+		QueryBySQL()
 	}
 }

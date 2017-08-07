@@ -6,7 +6,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-func QueryFunc() {
+func QueryBySQL() {
 	db, err := sql.Open("mysql", "root:admin@/project")
 	//db.SetMaxIdleConns(4000)
 	//db.SetMaxOpenConns(3500)
